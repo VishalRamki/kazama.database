@@ -27,8 +27,10 @@ for filename in sorted(os.listdir(entries_dir)):
     path = os.path.join(entries_dir, filename)
     with open(path, "rb") as f:
         hash_hex = hashlib.sha256(f.read()).hexdigest().upper()
-    entry_id = int(filename.split(".")[0])
-    manifest["files"].append({"id": entry_id, "file": filename, "hash": hash_hex})
+    #entry_id = int(filename.split(".")[0])
+    # i will just use the hash as the unique id? 
+    # i can read the json file on the service and insert it correctly
+    manifest["files"].append({"file": filename, "hash": hash_hex})
 
 with open(manifest_file, "w") as f:
     json.dump(manifest, f, indent=2)
