@@ -1,7 +1,7 @@
 import os, hashlib, json
 
-entries_dir = "data/entries"
-manifest_file = "data/manifest.json"
+entries_dir = "database/entries"
+manifest_file = "database/manifest.json"
 
 # Load previous manifest if it exists
 if os.path.exists(manifest_file):
