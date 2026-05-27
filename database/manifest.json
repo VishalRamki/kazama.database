@@ -1,6 +1,10 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.3",
   "files": [
+    {
+      "file": "forzahorizon6.json",
+      "hash": "910339F403EBD158EC550252299725B449C9BF301F3E340DE1A33C3B95A78CC8"
+    },
     {
       "file": "tekken8.json",
       "hash": "2758FF0A859834A7287372FD197CCE6A57E73CAB8BFEFC0AF9A71E7FCF53A9C4"
